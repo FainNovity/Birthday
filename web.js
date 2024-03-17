@@ -2,7 +2,7 @@
 
 var wishMe= new Audio("birthday.mp3");
 
-if(document.title=="wish"){
+if(document.title=="index"){
     let params = new URLSearchParams(location.search);
 var name=params.get('name');
 var age=parseInt(params.get('age'));
