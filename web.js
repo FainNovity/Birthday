@@ -2,13 +2,14 @@
 
 var wishMe= new Audio("birthday.mp3");
 
-    let local= window.localStorage;
-var name=local.getItem('name');
-var age=parseInt(local.getItem('age'));
+let params = new URLSearchParams(location.search);
+var name=params.get('name');
+var age=parseInt(params.get('age'));
 var canBlow=false;
 setTimeout(()=>{
     canBlow=true;
-document.getElementsByClassName("load")[0].style.display= "none";       document.getElementById('warn').innerText= "Now, blow the candles!!";
+document.getElementsByClassName("load")[0].style.display= "none";
+document.getElementById('warn').innerText= "Now, blow the candles!!";
 },22000);
 
 
