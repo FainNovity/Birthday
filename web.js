@@ -15,12 +15,9 @@ document.getElementsByClassName("load")[0].style.display= "none";       document
 document.getElementById('name').innerText=name;
 document.getElementById('age').innerText=age;
 
-function sleep(ms) {
-  return new Promise(resolve => setTimeout(resolve, ms));
-}
 
 for(var i=0;i<age;i++){   
-    sleep(1000).then(()=>{console.log(hello)});
+    
         var cake= document.getElementsByClassName("cake")[0];
     var candle= document.createElement('div');
     candle.classList.add('candle');
