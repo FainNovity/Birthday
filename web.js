@@ -2,7 +2,6 @@
 
 var wishMe= new Audio("birthday.mp3");
 
-if(document.title=="index"){
     let local= window.localStorage;
 var name=local.getItem('name');
 var age=parseInt(local.getItem('age'));
@@ -45,7 +44,7 @@ for(var i=0;i<age;i++){
     }   
     
 }
-}
+
 
 var voice = new Wad({source : 'mic',filter  : {
         type      : 'highpass',
